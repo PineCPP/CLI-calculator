@@ -6,8 +6,8 @@ A CLI (Command Line Interface) calculator.
 
 - How to install the project?
 
-Download the cpp file and build it according to your compiler, if you don't have one, download the prebuilt EXE file
-Create a new folder (anywhere) to store the exe file in
+Download the cpp file and build it according to your compiler, if you don't have one, download the prebuilt EXE file [THEN]
+Create a new folder (anywhere) to store the exe file in [THEN]
 Add the folder to the PATH variable
 
 - How to use the project?
