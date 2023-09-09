@@ -9,7 +9,7 @@ int main(int argc, char* argv[]) {
 
 	if (argc < 4) {
 
-		printf("USE THIS FORMAT: --operation x y\nEXAMPLE: --m 100 2\n\nOPERATIONS:\n--a (FOR ADDITION)\n--s (FOR SUBTRACTION)\n--m (FOR MULTIPLICATION\n--d (FOR DIVISION)");
+		printf("\nUSE THIS FORMAT: --operation x y\nEXAMPLE: --m 100 2\n\nOPERATIONS:\n--a (FOR ADDITION)\n--s (FOR SUBTRACTION)\n--m (FOR MULTIPLICATION\n--d (FOR DIVISION)\n--exp (FOR EXPONENTS SECOND NUMBER IS THE EXPONENT)\n");
 
 	} else if (strcmp(argv[1], "--a") == false){
 
@@ -49,6 +49,24 @@ int main(int argc, char* argv[]) {
 		double x = stod(argv[2]);
 		double y = stod(argv[3]);
 		double output = (x / y);
+		string outputprint = to_string(output);
+		const char* outputprintc = outputprint.c_str();
+
+		printf(outputprintc);
+
+	} 
+	else if (strcmp(argv[1], "--exp") == false) {
+
+		double x = stod(argv[2]);
+		double y = stod(argv[3]);
+		double output = x;
+
+		for (int i = 1; i < y; i++) {
+
+			output *= x;
+
+		}
+
 		string outputprint = to_string(output);
 		const char* outputprintc = outputprint.c_str();
 
